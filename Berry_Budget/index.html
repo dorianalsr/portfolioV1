@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berry Budget - Aesthetic Finance</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="noise"></div>
+
+    <main class="spa-container">
+        
+        <section id="view-setup" class="view">
+            <h1 class="berry-title">Berry Budget</h1>
+            <p class="subtitle">Gère tes finances avec douceur</p>
+            
+            <div class="illustration-box">
+                <img src="fond1.jpg" alt="Illustration Accueil" class="illustration-img">
+            </div>
+
+            <div class="input-group">
+                <label>Quel est ton budget total ?</label>
+                <input type="number" id="budget-input" placeholder="Ex: 800€" autocomplete="off">
+            </div>
+
+            <button onclick="setupBudget()" class="btn-berry">DÉMARRER</button>
+        </section>
+
+        <section id="view-dashboard" class="view hidden">
+            <div class="illustration-box">
+                <img src="fond2.jpg" alt="Illustration Dashboard" class="illustration-img">
+            </div>
+
+            <div class="balance-card">
+                <span>Reste à dépenser</span>
+                <h2 id="balance-amount">0.00 €</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="budget-bar"></div>
+                </div>
+            </div>
+
+            <div class="add-expense">
+                <input type="text" id="exp-name" placeholder="Article (ex: Myrtilles)">
+                <input type="number" id="exp-price" placeholder="Prix €">
+                <button onclick="addNewExpense()" class="btn-add">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="history-section">
+                <h3>Historique des baies</h3>
+                <ul id="expense-list">
+                    </ul>
+            </div>
+
+            <button onclick="location.reload()" class="btn-reset">Réinitialiser</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

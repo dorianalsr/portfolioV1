@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citrus - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="home-page" class="page-container">
+        <h1 class="lemon-title">Citrus To Do List</h1>
+        
+        <div class="illustration-box">
+            <img src="couverture.jpeg" alt="Citrus Aesthetic" id="main-illustration">
+        </div>
+
+        <button id="start-btn" class="pixel-btn-yellow">START</button>
+    </section>
+
+    <section id="dashboard-page" class="page-container hidden">
+        
+        <div class="top-widgets">
+            <div class="widget date-widget">
+                <p id="day-name">Thursday</p>
+                <div class="date-circle">
+                    <span id="day-number">13</span>
+                </div>
+                <p id="month-name">February</p>
+            </div>
+
+            <div class="widget progress-widget">
+                <h2 class="widget-title">Progression</h2>
+                <div class="progress-bar-container">
+                    <div id="progress-fill"></div>
+                </div>
+                <span id="progress-percent">0%</span>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="task-input" placeholder="Write your task here...">
+            <button id="add-task-btn" class="plus-btn">+</button>
+        </div>
+
+        <div class="tasks-container">
+            <ul id="task-list">
+                </ul>
+        </div>
+
+        <button id="finish-btn" class="pixel-btn-yellow">FINISH DAY</button>
+    </section>
+
+    <div id="finish-modal" class="modal hidden">
+        <div class="modal-content">
+            <h1>Bravo ! 🍋</h1>
+            <p>Tu as terminé ta journée avec succès.</p>
+            <button onclick="location.reload()" class="pixel-btn-yellow">RECOMCENCER</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

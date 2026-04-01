@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dorian Alastor | Portfolio</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="main-content">
+    
+    <aside class="sidebar">
+      <img src="image2.jpg" class="sidebar-header-img" alt="Fond Profil">
+      
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="mon.memoji.png" alt="Dorian Alastor">
+        </figure>
+        
+        <div class="info-content">
+          <h1 class="name">Dorian Alastor</h1>
+          <p class="title-badge">Candidat en Informatique</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p>Email</p>
+            <a href="mailto:do.alastor@icloud.com">do.alastor@icloud.com</a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p>Localisation</p>
+            <span>Chambéry, France</span>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main-container">
+      
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#about" class="nav-link active">À propos</a></li>
+          <li><a href="#resume" class="nav-link">Parcours</a></li>
+          <li><a href="#projects" class="nav-link">Projets</a></li>
+        </ul>
+      </nav>
+
+      <section id="about" class="content-section fade-in">
+        <div class="section-banner grid-pattern-banner"></div>
+        
+        <h2 class="h2">À propos</h2>
+        <div class="about-text">
+          <p>Mon parcours allie l'exigence du terrain à un esprit d'initiative constant. Après un engagement au sein de la <strong>Marine nationale</strong>, j'occupe aujourd'hui le poste d'<strong>Adjoint de Direction</strong> au sein de l'entreprise familiale <strong>SNC BAGA</strong>.</p>
+          <p>Au quotidien, j'assure la gestion opérationnelle et le suivi des stocks. C'est pour répondre aux besoins concrets de ce commerce de proximité que j'ai développé, en autonomie, un outil en <strong>Python</strong>.</p>
+          <p>Désormais, je souhaite passer du stade d'utilisateur à celui de concepteur. Je recherche un <strong>cursus académique exigeant</strong> afin d'acquérir l'expertise nécessaire.</p>
+        </div>
+      </section>
+
+      <section id="resume" class="content-section fade-in">
+        <h2 class="h2">Mon Parcours</h2>
+        
+        <div class="resume-header">
+          <div class="header-icon"><ion-icon name="briefcase-outline"></ion-icon></div>
+          <h3 class="h3">Expérience Professionnelle</h3>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <h4 class="h4">Adjoint de Direction — SNC BAGA</h4>
+            <span class="date">2023 — Présent</span>
+            <p class="timeline-text">Gestion opérationnelle et coordination logistique quotidienne.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <h4 class="h4">Matelot — Porte-avions Charles de Gaulle</h4>
+            <span class="date">2020 — Décembre 2020</span>
+            <p class="timeline-text">Engagement opérationnel au sein de la Marine nationale dans un environnement de haute technologie.</p>
+          </div>
+        </div>
+
+        <div class="resume-header">
+          <div class="header-icon"><ion-icon name="book-outline"></ion-icon></div>
+          <h3 class="h3">Éducation</h3>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <h4 class="h4">Lycée Louis Armand — Terminale STI2D (SIN)</h4>
+            <span class="date">2022 — 2023</span>
+            <p class="timeline-text">Spécialité Systèmes d’Information et Numérique.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <h4 class="h4">Lycée Louis Armand — 1ère STI2D</h4>
+            <span class="date">Janvier 2021 — 2022</span>
+            <p class="timeline-text">Reprise d'études en cours d'année suite à un engagement volontaire.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="circle"></div>
+            <h4 class="h4">École des Mousses</h4>
+            <span class="date">2019 — 2020</span>
+            <p class="timeline-text">Formation militaire et maritime initiale.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section fade-in">
+        <img src="image4.jpg" class="section-banner" alt="Bannière Projets">
+        
+        <h2 class="h2">Mes Projets</h2>
+        <div class="project-grid">
+          
+          <div class="project-card">
+            <div class="card-icon"><ion-icon name="cafe-outline"></ion-icon></div>
+            <h3 class="h4">Coffee Time Focus</h3>
+            <p>Une application de gestion du temps à l'interface épurée (SPA).</p>
+            <div class="card-tags"><span>JS ES6</span><span>UX Design</span></div>
+            <a href="Projet_Timer_Focus/index.html" target="_blank" class="git-btn">Lancer ☕</a>
+          </div>
+
+          <div class="project-card">
+            <div class="card-icon"><ion-icon name="wallet-outline"></ion-icon></div>
+            <h3 class="h4">Berry Budget</h3>
+            <p>Un gestionnaire de finances au design minimaliste.</p> 
+            <div class="card-tags"><span>JS ES6</span><span>Finance</span></div>
+            <a href="Berry_Budget/index.html" target="_blank" class="git-btn">Gérer 🍇</a>
+          </div>
+
+          <div class="project-card">
+            <div class="card-icon"><ion-icon name="cube-outline"></ion-icon></div>
+            <h3 class="h4">Gestion de Stock (Python)</h3>
+            <p>Outil d'automatisation logistique (SNC BAGA).</p>
+            <div class="card-tags"><span>Python</span><span>Data Analysis</span></div>
+            <a href="approche_stock.html" class="git-btn">Voir l'outil</a>
+          </div>
+
+          <div class="project-card">
+            <div class="card-icon"><ion-icon name="leaf-outline"></ion-icon></div>
+            <h3 class="h4">Lemon Productivity</h3>
+            <p>To-Do List ergonomique avec gestion du DOM.</p>  
+            <div class="card-tags"><span>JS ES6</span><span>Interface</span></div>
+            <a href="Projet To Do List/index.html" target="_blank" class="git-btn">Organiser 🍋</a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

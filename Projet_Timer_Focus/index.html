@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Time Focus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="noise"></div>
+
+    <main class="spa-container">
+        
+        <section id="view-home" class="view">
+            <h1 class="main-title">Coffee Time</h1>
+            <p class="subtitle">Étudier mieux avec ce petit temps café</p>
+            
+            <div class="image-wrapper">
+                <img src="couverture.jpg" alt="Coffee Aesthetic" class="cover-img">
+            </div>
+
+            <button onclick="navigateTo('view-task')" class="btn-primary">COMMENCER</button>
+        </section>
+
+        <section id="view-task" class="view hidden">
+            <h2 class="section-title">Ta mission ?</h2>
+            <input type="text" id="task-input" placeholder="Ex: Coder mon portfolio..." autocomplete="off">
+            
+            <p class="menu-label">Choisis ton café :</p>
+            <div class="coffee-menu">
+                <button class="menu-item active" data-time="25">☕ Espresso (25')</button>
+                <button class="menu-item" data-time="45">🥛 Latte (45')</button>
+                <button class="menu-item" data-time="60">🍯 Moka (60')</button>
+            </div>
+            
+            <button onclick="startFocus()" class="btn-primary">LANCER LE TIMER</button>
+        </section>
+
+        <section id="view-timer" class="view hidden">
+            <p id="active-task-name">MISSION EN COURS</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+
+            <div class="timer-display" id="timer">25:00</div>
+            
+            <p class="encouragement">"Chaque seconde est une petite victoire. ☕"</p>
+            
+            <div class="timer-controls">
+                <button id="toggle-btn" class="btn-circle">▶</button>
+                <button onclick="location.reload()" class="btn-text">Réinitialiser</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
